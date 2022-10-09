@@ -57,4 +57,6 @@ startGameBtn.addEventListener('click', function startText() {
   console.log('Game is starting...');
   const userSelection = getUserChoice();
   const botSelection = getBotChoice();
+  const winner = getWinner(userSelection, botSelection);
+  console.log(winner);
 });
