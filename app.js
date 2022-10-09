@@ -38,4 +38,6 @@ startGameBtn.addEventListener('click', function startText() {
   }
   gameIsRunning = true;
   console.log('Game is starting...');
+  const playerSelection = getUserChoice();
+  const botSelection = getBotChoice();
 });
