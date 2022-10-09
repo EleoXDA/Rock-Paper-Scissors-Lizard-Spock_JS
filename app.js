@@ -9,7 +9,8 @@ const person = {
     console.log('Hello there!');
   }
 }
-
+// this creates function stored an object -> called as method
 person.greet();
 
+//event listener is also a method on startGameBtn object
 startGameBtn.addEventListener('click', startGame)
