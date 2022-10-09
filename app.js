@@ -1,9 +1,12 @@
 const startGameBtn = document.getElementById('start-game-btn');
 
-const ROCK = 'ROCK'
-const PAPER = 'PAPER'
-const SCISSORS = 'SCISSORS'
-const DEFAULT_CHOICE = ROCK
+const ROCK = 'ROCK';
+const PAPER = 'PAPER';
+const SCISSORS = 'SCISSORS';
+const DEFAULT_CHOICE = ROCK;
+const RESULT_DRAW = 'DRAW';
+const RESULT_USER_WINS = 'USER_WINS';
+const RESULT_BOT_WINS = 'BOT_WINS';
 
 let gameIsRunning = false;
 
