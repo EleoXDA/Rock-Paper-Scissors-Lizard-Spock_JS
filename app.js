@@ -19,6 +19,17 @@ const getUserChoice = function() {
   return selection;
 };
 
+const getBotChoice = function() {
+  const randomValue = Math.random();
+  if (randomValue < 0.34){
+    return ROCK;
+  } else if (randomValue < 0.67) {
+    return PAPER;
+  } else {
+    return SCISSORS;
+  }
+};
+
 startGameBtn.addEventListener('click', function startText() {
   console.log('Game is starting...');
 });
