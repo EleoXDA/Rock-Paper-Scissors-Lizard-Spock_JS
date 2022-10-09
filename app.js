@@ -73,4 +73,5 @@ startGameBtn.addEventListener('click', () => {
     message = message + 'lost.';
   }
   alert(message);
+  gameIsRunning = false;
 });
