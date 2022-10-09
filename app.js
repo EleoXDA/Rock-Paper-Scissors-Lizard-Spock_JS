@@ -10,7 +10,7 @@ const RESULT_BOT_WINS = 'BOT_WINS';
 
 let gameIsRunning = false;
 
-const getUserChoice = function () {
+const getUserChoice = () => {
   const selection = prompt(
     `${ROCK}, ${PAPER} or ${SCISSORS}?`,
     ''
@@ -22,7 +22,7 @@ const getUserChoice = function () {
   return selection;
 };
 
-const getBotChoice = function () {
+const getBotChoice = () => {
   const randomValue = Math.random();
   if (randomValue < 0.34) {
     return ROCK;
@@ -55,7 +55,7 @@ const getWinner = (bChoice, uChoice) =>
   // }
 
 
-startGameBtn.addEventListener('click', function startText() {
+startGameBtn.addEventListener('click', () => {
   if (gameIsRunning) {
     return;
   }
