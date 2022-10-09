@@ -64,5 +64,13 @@ startGameBtn.addEventListener('click', () => {
   const userSelection = getUserChoice();
   const botSelection = getBotChoice();
   const winner = getWinner(userSelection, botSelection);
-  console.log(winner);
+  let message = `You picked ${userSelection}, bot picked ${botSelection}, so you`;
+  if (winner === RESTULT_DRAW) {
+    message = message + 'had a draw.';
+  } else if (winner === RESULT_USER_WINS) {
+    message = message + 'won.';
+  } else {
+    message = message + 'lost.';
+  }
+  alert(message);
 });
