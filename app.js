@@ -18,7 +18,7 @@ const startGameBtn = document.getElementById('start-game-btn');
 //event listener is also a method on startGameBtn object
 startGameBtn.addEventListener('click', function() {
   console.log('Game is starting...');
-}());
+});
 
 // console.log(typeof startGame); //will reveal that it is a function, not an object
 // console.dir(typeof startGame); //will reveal that function is an object that has key-value pair properties
