@@ -16,7 +16,7 @@ const startGameBtn = document.getElementById('start-game-btn');
 // person.greet();
 
 //event listener is also a method on startGameBtn object
-startGameBtn.addEventListener('click', function() {
+startGameBtn.addEventListener('click', function startText() {
   console.log('Game is starting...');
 });
 
