@@ -33,7 +33,7 @@ const getBotChoice = function () {
   }
 };
 
-const getWinner = function (bChoice, uChoice) {
+const getWinner = (bChoice, uChoice) => {
   if (bChoice === uChoice) {
     return RESULT_DRAW;
   } else if (
