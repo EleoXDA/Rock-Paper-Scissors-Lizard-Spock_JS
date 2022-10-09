@@ -2,9 +2,9 @@ const startGameBtn = document.getElementById('start-game-btn');
 
 // if you store a function in right side of equation -> it is no longer global and you need to call the left-side variable/constant name
 // it is now an expression, instead of declaration/statement
-const start = function startGame() {
+const start = function() {
   console.log('Game is starting...');
-}
+};
 
 // const person = {
 //   greet: function greet() {
