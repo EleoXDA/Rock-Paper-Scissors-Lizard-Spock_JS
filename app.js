@@ -5,6 +5,8 @@ const PAPER = 'PAPER'
 const SCISSORS = 'SCISSORS'
 const DEFAULT_CHOICE = ROCK
 
+let gameIsRunning = false;
+
 const getUserChoice = function() {
   const selection = prompt(`${ROCK}, ${PAPER} or ${SCISSORS}?`, '').toUpperCase();
   // uppercase will make sure to accept user options when it is not in capitals
@@ -31,5 +33,9 @@ const getBotChoice = function() {
 };
 
 startGameBtn.addEventListener('click', function startText() {
+  if (gameIsRunning){
+    return;
+  }
+  gameIsRunning = true;
   console.log('Game is starting...');
 });
