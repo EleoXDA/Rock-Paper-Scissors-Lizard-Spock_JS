@@ -19,12 +19,14 @@ const sayHello3 = () => console.log('Hi Eleo');
 const sayHello4 = name => 'Hi' + name;
 
 // call these functions:
-sayHello2('Eleo', 'Hello');
-sayHello3();
-console.log(sayHello4('Eleo'));
+sayHello2('Eleo', 'Hello');// => Hi Eleo
+sayHello3();// => Hi Eleo
+console.log(sayHello4('Eleo'));// => Hi Eleo
 
 
 // 5-3: Add a default argument to the function you created: A fallback value for the phrase if no value is provided
+const sayHello5 = (name, phrase = 'Hello') => console.log(phrase + ' ' + name);
+sayHello5('Eleo');// => Hello Eleo
 
 
 // 5-4: Add a new checkInput fn with takes unlimited strings and executes a cb fn with no argument
