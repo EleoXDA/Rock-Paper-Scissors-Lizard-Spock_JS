@@ -29,4 +29,16 @@ const sayHello5 = (name, phrase = 'Hello') => console.log(phrase + ' ' + name);
 sayHello5('Eleo');// => Hello Eleo
 
 
-// 5-4: Add a new checkInput fn with takes unlimited strings and executes a cb fn with no argument
+// 5-4: Add a new checkInput fn with takes unlimited strings and executes a cb fn if no argument or string is empty
+function checkInput(cb, ...strings) {
+  let hasEmptyArgument = false;
+  for (const text of strings) {
+    if (!text) { // if any text is empty
+      hasEmptyArgument = true;
+      break;
+    }
+  }
+  if (hasEmptyArgument) {
+    cb();
+  }
+}
