@@ -13,6 +13,8 @@ sayHello(Eleo);
 
 // 5-2-1:
 const sayHello2 = (name, phrase) => console.log(phrase + ' ' + name);
+// 5-2-2:
+const sayHello3 = () => console.log('Hi Eleo');
 
 
 // 5-3: Add a default argument to the function you created: A fallback value for the phrase if no value is provided
