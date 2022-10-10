@@ -18,6 +18,10 @@ const sayHello3 = () => console.log('Hi Eleo');
 // 5-2-3:
 const sayHello4 = name => 'Hi' + name;
 
+// call these functions:
+sayHello2('Eleo', 'Hello');
+sayHello3();
+console.log(sayHello4('Eleo'));
 
 
 // 5-3: Add a default argument to the function you created: A fallback value for the phrase if no value is provided
