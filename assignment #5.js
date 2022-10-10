@@ -5,7 +5,9 @@
 // sayHello();
 
 // 5-1: Rewrite the function above as an arrow function
+const sayHello = name => console.log('Hi' + name);
 
+sayHello(Eleo);
 
 // 5-2: Adjust the arrow function with three different syntaxes: two arguments, no arguments, and with one returned value
 
