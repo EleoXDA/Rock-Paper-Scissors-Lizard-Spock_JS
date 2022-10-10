@@ -11,6 +11,9 @@ sayHello(Eleo);
 
 // 5-2: Adjust the arrow function with three different syntaxes: two arguments, no arguments, and with one returned value
 
+// 5-2-1:
+const sayHello2 = (name, phrase) => console.log(phrase + ' ' + name);
+
 
 // 5-3: Add a default argument to the function you created: A fallback value for the phrase if no value is provided
 
