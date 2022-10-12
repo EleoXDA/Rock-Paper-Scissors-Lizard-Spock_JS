@@ -70,7 +70,7 @@ startGameBtn.addEventListener('click', () => {
   if (userSelection) {
     winner = getWinner(botSelection, userSelection);
   } else {
-    winner = getWinner(botSelection, userSelection); // we only pass one variable in function, but it still gets forgiven by JS
+    winner = getWinner(botSelection, userSelection);
   }
   let message = `You picked ${
     userSelection || DEFAULT_CHOICE
