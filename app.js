@@ -58,18 +58,6 @@ const getWinner = (
     ? RESULT_USER_WINS
     : RESULT_BOT_WINS;
 
-// if (bChoice === uChoice) {
-//   return RESULT_DRAW;
-// } else if (
-//   (bChoice === ROCK && uChoice === PAPER) ||
-//   (bChoice === PAPER && uChoice === SCISSORS) ||
-//   (bChoice === SCISSORS && uChoice === ROCK)
-// ) {
-//   return RESULT_USER_WINS;
-// } else {
-//   return RESULT_BOT_WINS;
-// }
-
 startGameBtn.addEventListener('click', () => {
   if (gameIsRunning) {
     return;
