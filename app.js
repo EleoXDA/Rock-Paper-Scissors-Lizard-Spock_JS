@@ -3,6 +3,8 @@ const startGameBtn = document.getElementById('start-game-btn');
 const ROCK = 'ROCK';
 const PAPER = 'PAPER';
 const SCISSORS = 'SCISSORS';
+const LIZARD = 'LIZARD';
+const SPOCK = 'SPOCK';
 const DEFAULT_CHOICE = ROCK;
 const RESULT_DRAW = 'DRAW';
 const RESULT_USER_WINS = 'USER_WINS';
@@ -24,12 +26,16 @@ const getUserChoice = () => {
 
 const getBotChoice = () => {
   const randomValue = Math.random();
-  if (randomValue < 0.34) {
+  if (randomValue < 0.20) {
     return ROCK;
-  } else if (randomValue < 0.67) {
+  } else if (randomValue < 0.4) {
     return PAPER;
-  } else {
+  } else if (randomValue < 0.6) {
     return SCISSORS;
+  } else if (randomValue < 0.8) {
+    return LIZARD;
+  } else {
+    return SPOCK;
   }
 };
 
@@ -41,6 +47,13 @@ const getWinner = (
     ? RESULT_DRAW
     : (bChoice === ROCK && uChoice === PAPER) ||
       (bChoice === PAPER && uChoice === SCISSORS) ||
+      (bChoice === LIZARD && uChoice === ROCK) ||
+      (bChoice === SPOCK && uChoice === LIZARD) ||
+      (bChoice === SCISSORS && uChoice === SPOCK) ||
+      (bChoice === LIZARD && uChoice === SCISSORS) ||
+      (bChoice === PAPER && uChoice === LIZARD) ||
+      (bChoice === SPOCK && uChoice === PAPER) ||
+      (bChoice === ROCK && uChoice === SPOCK) ||
       (bChoice === SCISSORS && uChoice === ROCK)
     ? RESULT_USER_WINS
     : RESULT_BOT_WINS;
