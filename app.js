@@ -17,7 +17,7 @@ const getUserChoice = () => {
     `${ROCK}, ${PAPER}, ${SCISSORS}, ${LIZARD} or ${SPOCK} ?`,
     ''
   ).toUpperCase(); // uppercase will make sure to accept user options when it is not in capitals
-  if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS) {
+  if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS  && selection !== LIZARD  && selection !== SPOCK) {
     alert(`Invalid choice! We chose ${DEFAULT_CHOICE} for you!`);
     return;
   }
