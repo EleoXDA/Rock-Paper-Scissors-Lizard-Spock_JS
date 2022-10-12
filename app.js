@@ -17,7 +17,13 @@ const getUserChoice = () => {
     `${ROCK}, ${PAPER}, ${SCISSORS}, ${LIZARD} or ${SPOCK} ?`,
     ''
   ).toUpperCase(); // uppercase will make sure to accept user options when it is not in capitals
-  if (selection !== ROCK && selection !== PAPER && selection !== SCISSORS  && selection !== LIZARD  && selection !== SPOCK) {
+  if (
+    selection !== ROCK &&
+    selection !== PAPER &&
+    selection !== SCISSORS &&
+    selection !== LIZARD &&
+    selection !== SPOCK
+  ) {
     alert(`Invalid choice! We chose ${DEFAULT_CHOICE} for you!`);
     return;
   }
@@ -26,7 +32,7 @@ const getUserChoice = () => {
 
 const getBotChoice = () => {
   const randomValue = Math.random();
-  if (randomValue < 0.20) {
+  if (randomValue < 0.2) {
     return ROCK;
   } else if (randomValue < 0.4) {
     return PAPER;
