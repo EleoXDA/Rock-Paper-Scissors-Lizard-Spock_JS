@@ -2,10 +2,9 @@
   position: relative;
   top: 100px;
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7),rgba(255, 255, 255, 0.7)),  url(RPSLS.webp);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),  url(RPSLS.webp);
   background-repeat: no-repeat;
   background-position: center;
-  /* background-size: cover; */
   background-attachment: fixed;
   height:1080px;
 }
