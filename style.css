@@ -2,18 +2,24 @@
   position: relative;
   /* top: 50px; */
   text-align: center;
-  background-image: url(R-P-S-L-S.png);
+  background-image: url(R.P.S.L.S.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height:1100px;
+  height:900px;
 }
 .rpsls {
-  font-size: 30px;
+  font-size: 20px;
   text-align: center;
 }
 
 h3 {
   margin-block-start: 0px !important;
   margin-block-end: 0px !important;
+}
+
+.rpsls {
+  border-radius:10px; 
+  height:50px; 
+  width:150px;
 }
