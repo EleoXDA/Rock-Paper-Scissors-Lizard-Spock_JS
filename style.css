@@ -1,14 +1,19 @@
 .container{
   position: relative;
-  top: 100px;
+  /* top: 50px; */
   text-align: center;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.8),rgba(255, 255, 255, 0.8)),  url(RPSLS.webp);
+  background-image: url(R-P-S-L-S.png);
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height:1080px;
+  height:1100px;
+}
+.rpsls {
+  font-size: 30px;
+  text-align: center;
 }
 
-.h1 span {
-  background-color: green; 
+h3 {
+  margin-block-start: 0px !important;
+  margin-block-end: 0px !important;
 }
