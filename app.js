@@ -72,12 +72,7 @@ startGameBtn.addEventListener('click', () => {
   console.log('Game is starting...');
   const userSelection = getUserChoice(); // might be undefined when default option is removed
   const botSelection = getBotChoice();
-  let winner;
-  if (userSelection) {
-    winner = getWinner(botSelection, userSelection);
-  } else {
-    winner = getWinner(botSelection, userSelection);
-  }
+  let winner = getWinner(botSelection, userSelection);
   let message = `You picked ${
     userSelection || DEFAULT_CHOICE
   }, bot picked ${botSelection}, so you `;
